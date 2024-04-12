@@ -23,8 +23,11 @@ function mycallback() {
 		} else {
 			lastMonth = 0
 		}
-	} 
+	} else if (ethDateTime.month === lastMonth && ethDateTime.date === mariam - 7) {
+		bot.sendMessage(398069506, `የዚህ ወር የማሪያም ማህበር ከ7 ቀን በሗላ  የ${list[index]} ነው።`)
+	}
 	if (index >= list.length) {
 		index = 0;
 	}
+
 }
